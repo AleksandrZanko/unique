@@ -1,0 +1,256 @@
+.projects {
+	width: 1005px;
+
+	margin: 0 auto;
+	margin-bottom: 116px;
+
+	background-image: url("../img/right-arrow.png");
+	background-repeat: no-repeat;
+	background-position: 725px 25px;
+}
+
+.projects__title {
+	display: block;
+
+	width: 449px;
+	height: 54px;
+
+	margin: 0 auto;
+	margin-bottom: 134px;
+	padding: 0;
+
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 26px;
+	line-height: 54px;
+	color: $white;
+	text-transform: uppercase;
+	font-weight: 700;		
+	text-align: center;
+
+	background-color: $grey;
+	border-radius: 5px;
+	box-shadow: rgba(70, 70, 70, 0.5) 1px 1px 5px;
+}
+
+.projects__list {
+	@include list-style();
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	padding-top: 80px;
+	padding-bottom: 44px;
+	padding-left: 94px;
+	padding-right: 94px;
+
+	background-color: #f4f4f4;
+}
+
+.projects__item {
+	width: 200px;
+
+	margin-bottom: 36px;
+	padding-top: 160px;
+}
+
+.projects__item--technical {
+	background-image: url("../img/projects-technical.png");
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+
+.projects__item--secure {
+	background-image: url("../img/projects-secure-access.png");
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+
+.projects__item--market-research {
+	background-image: url("../img/projects-market-res.png");
+	background-repeat: no-repeat;
+	background-position: center 9px;
+}
+
+.projects__item--credit {
+	background-image: url("../img/projects-credit.png");
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+
+.projects__item--targetting {
+	background-image: url("../img/projects-targetting.png");
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+
+.projects__item--insurance {
+	background-image: url("../img/projects-insurance.png");
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+
+.projects__item--ecomerce {
+	background-image: url("../img/projects-ecomerse.png");
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+
+.projects__item--office {
+	background-image: url("../img/projects-office.png");
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+
+.projects__item-title {
+	display: block;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #6a6a6a;
+	text-align: center;
+}
+
+@media (max-width: 1005px) {
+	.projects {
+		width: 100%;
+		background-position: 78.5% 25px;
+	}
+
+	.projects__list {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media (max-width: 970px) {
+	.projects {
+		background-position: 80% 25px;
+	}
+}
+
+@media (max-width: 930px) {
+	.projects {
+		background-position: 81% 25px;
+	}
+}
+
+@media (max-width: 900px) {
+	.projects {
+		background-position: 82.5% 25px;
+	}
+}
+
+@media (max-width: 860px) {
+	.projects {
+		background-position: 84% 25px;
+	}
+}
+
+@media (max-width: 825px) {
+	.projects {
+		background-position: 85.5% 25px;
+	}
+}
+
+@media (max-width: 800px) {
+	.projects {
+		background-position: 87% 25px;
+	}
+}
+
+@media (max-width: 770px) {
+	.projects {
+		background-position: 88.5% 25px;
+	}
+}
+
+@media (max-width: 740px) {
+	.projects {
+		background-position: 90% 25px;
+	}
+}
+
+@media (max-width: 720px) {
+	.projects {
+		background-image: none;
+	}
+	.projects__list {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media (max-width: 660px) {
+	.projects__item {
+		width: 50%;
+	}
+}
+
+@media (max-width: 500px) {
+	.projects__list {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media (max-width: 450px) {
+	.projects {
+		margin-bottom: 130px;
+	}
+
+	.projects__title {
+		margin-bottom: 90px;
+		width: 315px;
+		height: 45px;
+
+		font-size: 19px;
+		line-height: 45px;
+	}
+
+	.projects__list {
+		padding-top: 35px;
+	}
+
+	.projects__item--technical {
+		background-image: url("../img/projects-technical-mobile.png");
+		background-position: center center;
+	}
+
+	.projects__item--secure {
+		background-image: url("../img/projects-secure-access-mobile.png");
+		background-position: center center;
+	}
+
+	.projects__item--market-research {
+		background-image: url("../img/projects-market-res-mobile.png");
+		background-position: center center;
+	}
+
+	.projects__item--credit {
+		background-image: url("../img/projects-credit-mobile.png");
+		background-position: center center;
+	}
+
+	.projects__item--targetting {
+		background-image: url("../img/projects-targetting-mobile.png");
+		background-position: center center;
+	}
+
+	.projects__item--insurance {
+		background-image: url("../img/projects-insurance-mobile.png");
+		background-position: center center;
+	}
+
+	.projects__item--ecomerce {
+		background-image: url("../img/projects-ecomerse-mobile.png");
+		background-position: center center;
+	}
+
+	.projects__item--office {
+		background-image: url("../img/projects-office-mobile.png");
+		background-position: center center;
+	}
+
+}

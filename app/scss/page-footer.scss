@@ -1,0 +1,268 @@
+.page-footer {
+	box-sizing: border-box;
+	width: 1300px;
+
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-left: 145px;
+	padding-right: 145px;
+	padding-bottom: 10px;
+
+	background-color: $black;
+}
+
+.page-footer__company-information {
+	display: flex;
+	justify-content: space-between;
+}
+
+.page-footer__list-title {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 50px;
+	font-weight: 400;
+	color: #e6e9ed;
+	text-transform: uppercase;
+}
+
+.page-footer__list {
+	@include list-style();
+}
+
+.page-footer__item {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 300;
+	color: #aab2bd;
+}
+
+.page-footer__item a:hover {
+	color: $yellow;
+}
+
+.page-footer__company-information {
+	margin-bottom: 32px;
+}
+
+.page-footer__socials {
+	margin-bottom: 15px;
+}
+
+.page-footer__socials-list {
+	@include list-style();
+	display: flex;
+	justify-content: center;
+}
+
+.page-footer__social-link--facebook {
+	background-image: url("../img/facebook.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	&:hover {
+		background-image: url("../img/facebook-hover.png");
+	}
+}
+
+.page-footer__social-link--twitter {
+	background-image: url("../img/twitter.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	&:hover {
+		background-image: url("../img/twitter-hover.png");
+	}
+}
+
+.page-footer__social-link--google {
+	background-image: url("../img/google.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	&:hover {
+		background-image: url("../img/google-hover.png");
+	}
+}
+
+.page-footer__social-link--linkedin {
+	background-image: url("../img/in.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	&:hover {
+		background-image: url("../img/in-hover.png");
+	}
+}
+
+.page-footer__social-link {
+	display: block;
+
+	width: 40px;
+	height: 40px;
+
+	margin-right: 5px;
+	background-color: $yellow;
+	border-radius: 5px;
+	&:hover {
+		background-color: $white;
+	}
+}
+
+.page-footer__copyright-text {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 39px;
+	font-weight: 300;
+	color: #aab2bd;
+	text-align: center;
+}
+
+@media (max-width: $desktop-width) {
+	.page-footer {
+		width: 100%;	
+	}
+}
+
+@media (max-width: 1040px) {
+	.page-footer__social-link {
+		&:hover {
+			background-color: $yellow;
+		}
+		&:active {
+			background-color: $white;
+		}
+	}
+
+	.page-footer__social-link--facebook {
+		&:hover {
+			background-image: url("../img/facebook.png");
+		}
+		&:active {
+			background-image: url("../img/facebook-hover.png");
+		}
+	}
+
+	.page-footer__social-link--twitter {
+		&:hover {
+			background-image: url("../img/twitter.png");
+		}
+		&:active {
+			background-image: url("../img/twitter-hover.png");
+		}
+	}
+
+	.page-footer__social-link--google {
+		&:hover {
+			background-image: url("../img/google.png");
+		}
+		&:active {
+			background-image: url("../img/google-hover.png");
+		}
+	}
+
+	.page-footer__social-link--linkedin {
+		&:hover {
+			background-image: url("../img/in.png");
+		}
+		&:active {
+			background-image: url("../img/in-hover.png");
+		}
+	}
+
+	.page-footer__item a:hover {
+
+		&:hover {
+			color: #aab2bd;
+		}
+		&:active {
+			color: $yellow;
+		}
+	}
+}
+
+@media (max-width: 920px) {
+	.page-footer {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.page-footer__list-title {
+		line-height: 30px;
+	}
+
+	.page-footer__item {
+		line-height: 26px;
+	}
+}
+
+@media (max-width: 820px) {
+	.page-footer {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media (max-width: 600px) {
+	.page-footer {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media (max-width: 550px) {
+	.page-footer__company-information {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.page-footer__list {
+		width: 46%;
+	}
+
+	.page-footer__list-title {
+		margin-bottom: 10px;
+
+		font-size: 17px;
+		line-height: 22px;
+		text-align: center;
+	}
+	
+	.page-footer__item {
+		font-size: 15px;
+		line-height: 22px;
+
+		text-align: center;
+	}
+
+	.page-footer__copyright-text {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 420px) {
+	.page-footer {
+		padding-left: 50px;
+	}
+
+	.page-footer__company-information {
+		justify-content: space-between;
+	}
+
+	.page-footer__list-title {
+		margin-bottom: 7px;
+		text-align: left;
+	}
+
+	.page-footer__item {
+		font-size: 14px;
+		line-height: 19px;
+
+		text-align: left;
+	}
+}
+
+@media (max-width: 375px) {
+	.page-footer__copyright-text {
+		font-size: 11px;
+	}
+}

@@ -1,0 +1,130 @@
+.about-us {
+	width: 1300px;
+
+	margin: 0 auto;
+	margin-bottom: 135px;
+	padding-top: 85px;
+	padding-bottom: 110px;
+
+	background-image: url("../img/left-arrow.png"),
+	url("../img/about-us-bg.png");
+	background-repeat: no-repeat, repeat ;
+	background-position: 411px 112px, 0 0 ;
+}
+
+.about-us__title {
+	display: block;
+
+	width: 332px;
+	height: 54px;
+
+	margin: 0 auto;
+	margin-bottom: 145px;
+	padding: 0;
+
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 26px;
+	line-height: 54px;
+	color: $white;
+	text-transform: uppercase;
+	font-weight: 700;		
+	text-align: center;
+
+	background-color: $grey;
+	border-radius: 5px;
+	box-shadow: rgba(70, 70, 70, 0.5) 1px 1px 5px;
+}
+
+.about-us__scheme {
+	display: block;
+	margin: 0 auto;
+}
+
+@media (max-width: $desktop-width) {
+	.about-us {
+		width: 100%;
+		background-position: 33% 112px, 0 0;
+	}
+}
+
+@media (max-width: 1250px) {
+	.about-us {
+		width: 100%;
+		background-position: 32% 112px, 0 0;
+	}
+}
+	
+@media (max-width: 1170px) {
+	.about-us {
+		width: 100%;
+		background-position: 30% 112px, 0 0;
+	}
+}
+
+@media (max-width: 1080px) {
+	.about-us {
+		width: 100%;
+		background-position: 28.5% 112px, 0 0;
+	}
+}
+
+@media (max-width: 1000px) {
+	.about-us {
+		width: 100%;
+		background-position: 27% 112px, 0 0;
+	}
+}
+
+@media (max-width: 930px) {
+	.about-us {
+		width: 100%;
+		background-position: 25% 112px, 0 0;
+	}
+}
+
+@media (max-width: 880px) {
+	.about-us {
+		width: 100%;
+		background-position: 23.5% 112px, 0 0;
+	}
+}
+
+@media (max-width: 820px) {
+	.about-us {
+		width: 100%;
+		background-position: 21% 112px, 0 0;
+	}
+}
+
+@media (max-width: 770px) {
+	.about-us {
+		width: 100%;
+		background-position: 19% 112px, 0 0;
+	}
+}
+
+@media (max-width: 720px) {
+	.about-us {
+		background-image: none, url("../img/about-us-bg.png");
+	}
+
+	.about-us__title {
+		margin-bottom: 100px;
+	}
+}
+
+@media (max-width: 450px) {
+	.about-us {
+		margin-bottom: 130px;
+	}
+
+	.about-us__title {
+		width: 280px;
+		height: 48px;
+
+		margin-bottom: 115px;
+
+		font-size: 24px;
+		line-height: 48px;
+	}
+}

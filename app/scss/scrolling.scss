@@ -1,0 +1,187 @@
+::-webkit-scrollbar-button:start {
+	width: 17px;
+	height: 17px;
+
+	background-image: url("../img/top.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+::-webkit-scrollbar-button:end {
+	width: 17px;
+	height: 17px;
+
+	background-image: url("../img/bottom.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+::-webkit-scrollbar-button:hover {
+	background-color: #f6f6e9;
+}
+
+
+::-webkit-scrollbar-track {
+	background-color: #f6f6e9;	
+}
+
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background-color: $yellow;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: orange;
+}
+
+::-webkit-scrollbar {
+	width: 17px;
+}
+
+.scroll {
+	display: none;
+}
+
+.scroll__top {
+	position: fixed;
+	box-sizing: content-box;
+
+	right: 20px;
+	bottom: calc(50% + 30px);
+
+	width: 36px;
+	height: 36px;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: transparent;
+	border: 3px solid $yellow;
+	border-radius: 3px;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $yellow;
+	}
+
+	&:hover::before,
+	&:hover::after {
+		background-color: $white;
+	}
+}
+
+.scroll__top::before {
+	position: absolute;
+
+	content: "";
+
+	top: 13px;
+	left: 2px;
+	width: 20px;
+	height: 5px;
+	transform: rotate(-45deg);
+	background-color: $yellow;
+	border-radius: 5px;
+}
+
+.scroll__top::after {
+	position: absolute;
+
+	content: "";
+
+	top: 13px;
+	right: 2px;
+	width: 20px;
+	height: 5px;
+	transform: rotate(45deg);
+	background-color: $yellow;
+	border-radius: 5px;
+}
+
+.scroll__bottom {
+	position: fixed;
+	box-sizing: content-box;
+
+	right: 20px;
+	bottom: calc(50% - 30px);
+
+	width: 36px;
+	height: 36px;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: transparent;
+	border: 3px solid $yellow;
+	border-radius: 3px;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $yellow;
+	}
+
+	&:hover::before,
+	&:hover::after {
+		background-color: $white;
+	}
+}
+
+.scroll__bottom::before {
+	position: absolute;
+
+	content: "";
+
+	bottom: 13px;
+	left: 2px;
+	width: 20px;
+	height: 5px;
+	transform: rotate(45deg);
+	background-color: $yellow;
+	border-radius: 5px;
+}
+
+.scroll__bottom::after {
+	position: absolute;
+
+	content: "";
+
+	bottom: 13px;
+	right: 2px;
+	width: 20px;
+	height: 5px;
+	transform: rotate(-45deg);
+	background-color: $yellow;
+	border-radius: 5px;
+}
+
+
+
+@media (max-width: $desktop-width) {
+	.scroll--active {
+	display: block;
+}
+}
+
+@media (max-width: 1040px) {
+	.scroll__top,
+	.scroll__bottom {
+		&:hover {
+			background-color: transparent;
+		}
+
+		&:active {
+			background-color: $yellow;
+		}
+
+		&:hover::before,
+		&:hover::after {
+			background-color: $yellow;
+		}
+		&:active::before,
+		&:active::after {
+			background-color: $white;
+		}
+	
+	}
+}
